@@ -5,3 +5,9 @@ BridgeEmulator/web-ui/public/config.js
 node_modules
 BridgeEmulator/config.json
 ./exports
+.idea/
+BridgeEmulator/cert.pem
+BridgeEmulator/coap-client-linux
+BridgeEmulator/config-backup-2018-07-29.json
+BridgeEmulator/entertainment-armv7l
+BridgeEmulator/env/

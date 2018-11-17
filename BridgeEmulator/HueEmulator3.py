@@ -711,9 +711,32 @@ def sendLightRequest(light, data):
                         sleep(0.7)
                 if len(color) != 0:
                     sendRequest(url, method, json.dumps(color))
+            elif bridge_config["lights_address"][light]["protocol"] == "particle":
+                print("Request: ", data)
+                if data.get('xy', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-color"
+                    color = convert_xy(data['xy'][0], data['xy'][1], bridge_config["lights"][light]["state"]["bri"])
+                    payload['arg'] = "{},{},{}".format(color[0], color[1], color[2])
+                if data.get('bri', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-brightness"
+                    payload['arg'] = data['bri']
+                if data.get('on', None) is not None:
+                    if data['on'] is True:
+                        url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-on"
+                    elif data['on'] is False:
+                        url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-off"
+
+                print("Request URL: ", url)
+                print("Payload: ", json.dumps(payload, indent=2))
+                payload['access_token'] = bridge_config['particle']['access_token']
+                head = {"Content-type": "application/x-www-form-urlencoded"}
+                response = requests.post(url, data=payload, timeout=3, headers=head)
+                print("Response: ", json.dumps(json.loads(response.text), indent=2))
             else:
-                sendRequest(url, method, json.dumps(payload))
-        except:
+                sendRequest(url, 'POST', json.dumps())
+        except Exception as ex:
+            print("Exception: ", ex)
+            print("Exception dict: ", ex.__dict__)
             bridge_config["lights"][light]["state"]["reachable"] = False
             logging.debug("request error")
         else:
@@ -787,7 +810,7 @@ def syncWithLights(): #update Hue Bridge lights states
                         bridge_config["lights"][light]["state"].update(light_state)
                 if bridge_config["lights_address"][light]["protocol"] == "native":
                     light_data = json.loads(sendRequest("http://" + bridge_config["lights_address"][light]["ip"] + "/get?light=" + str(bridge_config["lights_address"][light]["light_nr"]), "GET", "{}"))
-                    bridge_config["lights"][light]["state"].update(light_data)
+                    ["lights"][light]["state"].update(light_data)
                 elif bridge_config["lights_address"][light]["protocol"] == "hue":
                     light_data = json.loads(sendRequest("http://" + bridge_config["lights_address"][light]["ip"] + "/api/" + bridge_config["lights_address"][light]["username"] + "/lights/" + bridge_config["lights_address"][light]["light_id"], "GET", "{}"))
                     bridge_config["lights"][light]["state"].update(light_data["state"])

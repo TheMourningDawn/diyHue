@@ -1,58 +1,57 @@
 {
-   "alarm_config":{
-      "mail_from":"your_email@gmail.com",
-      "mail_username":"",
-      "mail_password":"",
-      "mail_recipients":[
-         "first_recipient@mail.com",
-         "second_recipient@mail.com"
-      ],
-      "mail_subject":"HUE ALARM TRIGGERED!",
-      "smtp_port":465,
-      "smtp_server":"smtp.gmail.com"
-   },
-   "capabilities":{
-      "groups":{
-         "available":64
-      },
-      "lights":{
-         "available":63
-      },
-      "resourcelinks":{
-         "available":64
-      },
-      "rules":{
-         "actions":{
-            "available":400
-         },
-         "available":200,
-         "conditions":{
-            "available":400
-         }
-      },
-      "scenes":{
-         "available":200,
-         "lightstates":{
-            "available":2048
-         }
-      },
-      "schedules":{
-         "available":100
-      },
-      "sensors":{
-         "available":63,
-         "clip":{
-            "available":63
-         },
-         "zgp":{
-            "available":63
-         },
-         "zll":{
-            "available":63
-         }
-      },
-      "timezones":{
-         "values":[
+    "alarm_config": {
+        "mail_from": "your_email@gmail.com",
+        "mail_password": "",
+        "mail_recipients": [
+            "first_recipient@mail.com",
+            "second_recipient@mail.com"
+        ],
+        "mail_subject": "HUE ALARM TRIGGERED!",
+        "mail_username": "",
+        "smtp_port": 465,
+        "smtp_server": "smtp.gmail.com"
+    },
+    "capabilities": {
+        "groups": {
+            "available": 64
+        },
+        "lights": {
+            "available": 63
+        },
+        "resourcelinks": {
+            "available": 64
+        },
+        "rules": {
+            "actions": {
+                "available": 400
+            },
+            "available": 200,
+            "conditions": {
+                "available": 400
+            }
+        },
+        "scenes": {
+            "available": 200,
+            "lightstates": {
+                "available": 2048
+            }
+        },
+        "schedules": {
+            "available": 100
+        },
+        "sensors": {
+            "available": 63,
+            "clip": {
+                "available": 63
+            },
+            "zgp": {
+                "available": 63
+            },
+            "zll": {
+                "available": 63
+            }
+        },
+        "timezones": [
             "CET",
             "CST6CDT",
             "EET",
@@ -491,134 +490,1307 @@
             "Pacific/Wake",
             "Pacific/Wallis",
             "US/Pacific-New"
-         ]
-      }
-   },
-   "config":{
-      "name":"Philips hue",
-      "zigbeechannel":25,
-      "bridgeid":"001788FFFE29864E",
-      "mac":"00:17:88:29:85:3e",
-      "dhcp":true,
-      "ipaddress":"192.168.10.11",
-      "netmask":"255.255.255.0",
-      "gateway":"192.168.10.1",
-      "proxyaddress":"none",
-      "proxyport":0,
-      "UTC":"2018-06-09T18:03:20",
-      "localtime":"2018-06-09T21:03:20",
-      "timezone":"Europe/Bucharest",
-      "modelid":"BSB002",
-      "datastoreversion":"70",
-      "swversion":"1809121051",
-      "apiversion":"1.24.0",
-      "swupdate":{
-         "updatestate":0,
-         "checkforupdate":false,
-         "devicetypes":{
-            "bridge":false,
-            "lights":[
-
-            ],
-            "sensors":[
-
-            ]
-         },
-         "url":"",
-         "text":"",
-         "notify":true
-      },
-      "swupdate2":{
-         "checkforupdate":false,
-         "lastchange":"2018-06-09T10:11:08",
-         "bridge":{
-            "state":"noupdates",
-            "lastinstall":"2018-06-08T19:09:45"
-         },
-         "state":"noupdates",
-         "autoinstall":{
-            "updatetime":"T14:00:00",
-            "on":false
-         }
-      },
-      "linkbutton":false,
-      "portalservices":true,
-      "portalconnection":"connected",
-      "portalstate":{
-         "signedon":true,
-         "incoming":false,
-         "outgoing":true,
-         "communication":"disconnected"
-      },
-      "internetservices":{
-         "internet":"connected",
-         "remoteaccess":"connected",
-         "time":"connected",
-         "swupdate":"connected"
-      },
-      "factorynew":false,
-      "replacesbridgeid":null,
-      "backup":{
-         "status":"idle",
-         "errorcode":0
-      },
-      "starterkitid":"",
-      "whitelist":{
-
-      }
-   },
-   "deconz":{
-      "enabled":false,
-      "lights":{
-
-      },
-      "port":8080,
-      "sensors":{
-
-      }
-   },
-   "groups":{
-
-   },
-   "lights":{
-
-   },
-   "resourcelinks":{
-
-   },
-   "rules":{
-
-   },
-   "scenes":{
-
-   },
-   "schedules":{
-
-   },
-   "sensors":{
-      "1":{
-         "state":{
-            "daylight":null,
-            "lastupdated":"none"
-         },
-         "config":{
-            "on":true,
-            "configured":false,
-            "sunriseoffset":30,
-            "sunsetoffset":-30
-         },
-         "name":"Daylight",
-         "type":"Daylight",
-         "modelid":"PHDL00",
-         "manufacturername":"Philips",
-         "swversion":"1.0"
-      }
-   },
-   "lights_address":{
-
-   },
-   "linkbutton":{
-      "lastlinkbuttonpushed":"1517072396",
-      "linkbutton_auth":"SHVlOkh1ZQ=="
-   }
+        ]
+    },
+    "config": {
+        "UTC": "2018-11-17T01:09:50",
+        "apiversion": "1.24.0",
+        "backup": {
+            "errorcode": 0,
+            "status": "idle"
+        },
+        "bridgeid": "ACDE48FFFE001122",
+        "datastoreversion": "70",
+        "dhcp": true,
+        "factorynew": false,
+        "gateway": "192.168.1.1",
+        "internetservices": {
+            "internet": "connected",
+            "remoteaccess": "connected",
+            "swupdate": "connected",
+            "time": "connected"
+        },
+        "ipaddress": "192.168.1.116",
+        "linkbutton": false,
+        "localtime": "2018-11-16T19:09:50",
+        "mac": "ac:de:48:00:11:22",
+        "modelid": "BSB002",
+        "name": "Philips hue",
+        "netmask": "255.255.255.0",
+        "portalconnection": "connected",
+        "portalservices": true,
+        "portalstate": {
+            "communication": "disconnected",
+            "incoming": false,
+            "outgoing": true,
+            "signedon": true
+        },
+        "proxyaddress": "none",
+        "proxyport": 0,
+        "replacesbridgeid": null,
+        "starterkitid": "",
+        "swupdate": {
+            "checkforupdate": false,
+            "devicetypes": {
+                "bridge": false,
+                "lights": [],
+                "sensors": []
+            },
+            "notify": true,
+            "text": "",
+            "updatestate": 0,
+            "url": ""
+        },
+        "swupdate2": {
+            "autoinstall": {
+                "on": false,
+                "updatetime": "T14:00:00"
+            },
+            "bridge": {
+                "lastinstall": "2018-06-08T19:09:45",
+                "state": "noupdates"
+            },
+            "checkforupdate": false,
+            "lastchange": "2018-06-09T10:11:08",
+            "state": "noupdates"
+        },
+        "swversion": "1806051111",
+        "timezone": "Europe/Bucharest",
+        "whitelist": {
+            "0bdc9d2d256b3ee9daae347be6f4dc83": {
+                "create date": "2018-11-16T21:59:00",
+                "last use date": "2018-11-16T19:09:50",
+                "name": "all 4 hue#Pixel 2 XL"
+            }
+        },
+        "zigbeechannel": 25
+    },
+    "deconz": {
+        "enabled": false,
+        "lights": {},
+        "port": 8080,
+        "sensors": {}
+    },
+    "groups": {},
+    "lights": {
+        "1": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Island 1",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "transitiontime": 4,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:45",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:02:bf:1f-0b"
+        },
+        "10": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Paper lamp",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-06T07:59:45",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:f8:7e:6b-0b"
+        },
+        "11": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Livingroom fan 1",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-06T08:00:18",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:84:25:87-0b"
+        },
+        "12": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "maxlumen": 840,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": false
+                }
+            },
+            "config": {
+                "archetype": "classicbulb",
+                "direction": "omnidirectional",
+                "function": "functional"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LWB014",
+            "name": "Bathroom 1",
+            "productid": "Philips-LWB014-1-A19DLv4",
+            "productname": "Hue white lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "ct": 179,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "xy": [
+                    0.3306,
+                    0.1359
+                ]
+            },
+            "swconfigid": "321D79EA",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:48",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Dimmable light",
+            "uniqueid": "00:17:88:01:04:1d:7d:87-0b"
+        },
+        "13": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "maxlumen": 840,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": false
+                }
+            },
+            "config": {
+                "archetype": "classicbulb",
+                "direction": "omnidirectional",
+                "function": "functional"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LWB014",
+            "name": "Bathroom 2",
+            "productid": "Philips-LWB014-1-A19DLv4",
+            "productname": "Hue white lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "ct": 179,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "xy": [
+                    0.3306,
+                    0.1359
+                ]
+            },
+            "swconfigid": "321D79EA",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:43",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Dimmable light",
+            "uniqueid": "00:17:88:01:04:1d:20:a7-0b"
+        },
+        "14": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Island 2",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "transitiontime": 4,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:41",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:7c:94:fc-0b"
+        },
+        "15": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "Awesome",
+            "name": "Right Shelf",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 179,
+                "effect": "none",
+                "hue": 41442,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 75,
+                "transitiontime": 4,
+                "xy": [
+                    0.1833,
+                    0.0717
+                ]
+            },
+            "swconfigid": "FB3DCCB5",
+            "swupdate": {
+                "lastinstall": "2018-04-06T08:00:21",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
+        },
+        "16": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "Awesome",
+            "name": "Left Shelf",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 270,
+                "effect": "none",
+                "hue": 41442,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 75,
+                "transitiontime": 4,
+                "xy": [
+                    0.3306,
+                    0.1359
+                ]
+            },
+            "swconfigid": "FB3DCCB5",
+            "swupdate": {
+                "lastinstall": "2018-04-06T08:00:21",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
+        },
+        "17": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "Awesome",
+            "name": "TV Console",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 179,
+                "effect": "none",
+                "hue": 41442,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 75,
+                "transitiontime": 4,
+                "xy": [
+                    0.3306,
+                    0.1359
+                ]
+            },
+            "swconfigid": "FB3DCCB5",
+            "swupdate": {
+                "lastinstall": "2018-04-06T08:00:21",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
+        },
+        "2": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Entry door",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-11T07:27:14",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:84:2b:32-0b"
+        },
+        "3": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Side table lamp",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:35",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:de:6f:a3-0b"
+        },
+        "4": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.675,
+                            0.322
+                        ],
+                        [
+                            0.409,
+                            0.518
+                        ],
+                        [
+                            0.167,
+                            0.04
+                        ]
+                    ],
+                    "colorgamuttype": "B",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 600,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT001",
+            "name": "Bedroom fan 2",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 52998,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 248,
+                "xy": [
+                    0.3306,
+                    0.136
+                ]
+            },
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:57",
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:00:fa:c1:fe-0b"
+        },
+        "5": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT014",
+            "name": "Island 3",
+            "productid": "Philips-LCT014-2-A19ECLv4",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "46F127F3",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:38",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:02:8f:1b:b4-0b"
+        },
+        "6": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.675,
+                            0.322
+                        ],
+                        [
+                            0.409,
+                            0.518
+                        ],
+                        [
+                            0.167,
+                            0.04
+                        ]
+                    ],
+                    "colorgamuttype": "B",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 600,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT001",
+            "name": "Dining room",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 52998,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 248,
+                "xy": [
+                    0.3306,
+                    0.136
+                ]
+            },
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:55",
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:00:d8:59:98-0b"
+        },
+        "7": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 300,
+                    "mindimlevel": 40
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "huego",
+                "direction": "omnidirectional",
+                "function": "decorative"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LLC020",
+            "name": "Bedroom Go Lamp",
+            "productname": "Hue go",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 447,
+                "effect": "none",
+                "hue": 50082,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 222,
+                "transitiontime": 4,
+                "xy": [
+                    0.3306,
+                    0.1359
+                ]
+            },
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:02",
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:02:14:56:1f-0b"
+        },
+        "8": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.675,
+                            0.322
+                        ],
+                        [
+                            0.409,
+                            0.518
+                        ],
+                        [
+                            0.167,
+                            0.04
+                        ]
+                    ],
+                    "colorgamuttype": "B",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 600,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT001",
+            "name": "Bedroom fan 1",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 52998,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 248,
+                "xy": [
+                    0.3306,
+                    0.136
+                ]
+            },
+            "swupdate": {
+                "lastinstall": null,
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:00:d8:59:3e-0b"
+        },
+        "9": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Livingroom fan 2",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "none",
+                "bri": 254,
+                "colormode": "xy",
+                "ct": 178,
+                "effect": "none",
+                "hue": 53160,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 251,
+                "xy": [
+                    0.3307,
+                    0.1361
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-06T08:00:21",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:84:26:2f-0b"
+        }
+    },
+    "lights_address": {
+        "1": {
+            "ip": "192.168.1.148",
+            "light_id": "6",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "10": {
+            "ip": "192.168.1.148",
+            "light_id": "11",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "11": {
+            "ip": "192.168.1.148",
+            "light_id": "12",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "12": {
+            "ip": "192.168.1.148",
+            "light_id": "8",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "13": {
+            "ip": "192.168.1.148",
+            "light_id": "9",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "14": {
+            "ip": "192.168.1.148",
+            "light_id": "7",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "15": {
+            "ip": "192.168.1.148",
+            "light_id": "2f0036001447353136383631",
+            "protocol": "particle",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "16": {
+            "ip": "192.168.1.148",
+            "light_id": "31003e001347353236343033",
+            "protocol": "particle",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "17": {
+            "ip": "192.168.1.148",
+            "light_id": "280018000c47343438323536",
+            "protocol": "particle",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "2": {
+            "ip": "192.168.1.148",
+            "light_id": "14",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "3": {
+            "ip": "192.168.1.148",
+            "light_id": "10",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "4": {
+            "ip": "192.168.1.148",
+            "light_id": "2",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "5": {
+            "ip": "192.168.1.148",
+            "light_id": "5",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "6": {
+            "ip": "192.168.1.148",
+            "light_id": "3",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "7": {
+            "ip": "192.168.1.148",
+            "light_id": "4",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "8": {
+            "ip": "192.168.1.148",
+            "light_id": "1",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        },
+        "9": {
+            "ip": "192.168.1.148",
+            "light_id": "13",
+            "protocol": "hue",
+            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+        }
+    },
+    "linkbutton": {
+        "lastlinkbuttonpushed": "1542415478",
+        "linkbutton_auth": "SHVlOkh1ZQ=="
+    },
+    "particle": {
+        "access_token": "33758e91bd70b14d10de5eab575bd65416fac6a2"
+    },
+    "resourcelinks": {},
+    "rules": {},
+    "scenes": {},
+    "schedules": {},
+    "sensors": {
+        "1": {
+            "config": {
+                "configured": false,
+                "on": true,
+                "sunriseoffset": 30,
+                "sunsetoffset": -30
+            },
+            "manufacturername": "Philips",
+            "modelid": "PHDL00",
+            "name": "Daylight",
+            "state": {
+                "daylight": null,
+                "lastupdated": "none"
+            },
+            "swversion": "1.0",
+            "type": "Daylight"
+        },
+        "2": {
+            "manufacturername": "all 4 hue",
+            "modelid": "Model 2015",
+            "name": "Light status",
+            "state": {
+                "status": 0
+            },
+            "swversion": "1.0",
+            "type": "CLIPGenericStatus",
+            "uniqueid": "PFHS-LIGHT-STATE"
+        }
+    }
 }
