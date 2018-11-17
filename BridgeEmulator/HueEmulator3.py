@@ -79,7 +79,18 @@ def entertainmentService():
                             updateGroupStats(lightId)
 
 
-light_types = {"LCT015": {"state": {"on": False, "bri": 200, "hue": 0, "sat": 0, "xy": [0.0, 0.0], "ct": 461, "alert": "none", "effect": "none", "colormode": "ct", "reachable": True}, "type": "Extended color light", "swversion": "1.29.0_r21169"}, "LST002": {"state": {"on": False, "bri": 200, "hue": 0, "sat": 0, "xy": [0.0, 0.0], "ct": 461, "alert": "none", "effect": "none", "colormode": "ct", "reachable": True}, "type": "Color light", "swversion": "5.90.019950"}, "LWB010": {"state": {"on": False, "bri": 254,"alert": "none", "reachable": True}, "type": "Dimmable light", "swversion": "1.15.0_r18729"}, "LTW001": {"state": {"on": False, "colormode": "ct", "alert": "none", "reachable": True, "bri": 254, "ct": 230}, "type": "Color temperature light", "swversion": "5.50.1.19085"}, "Plug 01": {"state": {"on": False, "alert": "none", "reachable": True}, "type": "On/Off plug-in unit", "swversion": "V1.04.12"}}
+light_types = {"LCT015": {
+    "state": {"on": False, "bri": 200, "hue": 0, "sat": 0, "xy": [0.0, 0.0], "ct": 461, "alert": "none",
+              "effect": "none", "colormode": "ct", "reachable": True}, "type": "Extended color light",
+    "swversion": "1.29.0_r21169"}, "LST002": {
+    "state": {"on": False, "bri": 200, "hue": 0, "sat": 0, "xy": [0.0, 0.0], "ct": 461, "alert": "none",
+              "effect": "none", "colormode": "ct", "reachable": True}, "type": "Color light",
+    "swversion": "5.90.019950"}, "LWB010": {"state": {"on": False, "bri": 254, "alert": "none", "reachable": True},
+                                            "type": "Dimmable light", "swversion": "1.15.0_r18729"}, "LTW001": {
+    "state": {"on": False, "colormode": "ct", "alert": "none", "reachable": True, "bri": 254, "ct": 230},
+    "type": "Color temperature light", "swversion": "5.50.1.19085"},
+               "Plug 01": {"state": {"on": False, "alert": "none", "reachable": True}, "type": "On/Off plug-in unit",
+                           "swversion": "V1.04.12"}}
 
 def addTradfriDimmer(sensor_id, group_id):
     rules = [{ "actions":[{"address": "/groups/" + group_id + "/action", "body":{ "on":True, "bri":1 }, "method": "PUT" }], "conditions":[{ "address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx"}, { "address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "2002" }, { "address": "/groups/" + group_id + "/state/any_on", "operator": "eq", "value": "false" }], "name": "Remote " + sensor_id + " turn on" },{"actions":[{"address":"/groups/" + group_id + "/action", "body":{ "on": False}, "method":"PUT"}], "conditions":[{ "address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx" }, { "address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "4002" }, { "address": "/groups/" + group_id + "/state/any_on", "operator": "eq", "value": "true" }, { "address": "/groups/" + group_id + "/action/bri", "operator": "eq", "value": "1"}], "name":"Dimmer Switch " + sensor_id + " off"}, { "actions":[{ "address": "/groups/" + group_id + "/action", "body":{ "on":False }, "method": "PUT" }], "conditions":[{ "address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx" }, { "address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "3002" }, { "address": "/groups/" + group_id + "/state/any_on", "operator": "eq", "value": "true" }, { "address": "/groups/" + group_id + "/action/bri", "operator": "eq", "value": "1"}], "name": "Remote " + sensor_id + " turn off" }, { "actions": [{"address": "/groups/" + group_id + "/action", "body":{"bri_inc": 32, "transitiontime": 9}, "method": "PUT" }], "conditions": [{ "address": "/groups/" + group_id + "/state/any_on", "operator": "eq", "value": "true" },{ "address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "2002" }, {"address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx"}], "name": "Dimmer Switch " + sensor_id + " rotate right"}, { "actions": [{"address": "/groups/" + group_id + "/action", "body":{"bri_inc": 56, "transitiontime": 9}, "method": "PUT" }], "conditions": [{ "address": "/groups/" + group_id + "/state/any_on", "operator": "eq", "value": "true" },{ "address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "1002" }, {"address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx"}], "name": "Dimmer Switch " + sensor_id + " rotate fast right"}, {"actions": [{"address": "/groups/" + group_id + "/action", "body": {"bri_inc": -32, "transitiontime": 9}, "method": "PUT"}], "conditions": [{ "address": "/groups/" + group_id + "/action/bri", "operator": "gt", "value": "1"},{"address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "3002"}, {"address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx"}], "name": "Dimmer Switch " + sensor_id + " rotate left"}, {"actions": [{"address": "/groups/" + group_id + "/action", "body": {"bri_inc": -56, "transitiontime": 9}, "method": "PUT"}], "conditions": [{ "address": "/groups/" + group_id + "/action/bri", "operator": "gt", "value": "1"},{"address": "/sensors/" + sensor_id + "/state/buttonevent", "operator": "eq", "value": "4002"}, {"address": "/sensors/" + sensor_id + "/state/lastupdated", "operator": "dx"}], "name": "Dimmer Switch " + sensor_id + " rotate left"}]
@@ -151,7 +162,7 @@ def sendEmail(triggered_sensor):
 
 #load config files
 try:
-    with open('/opt/hue-emulator/config.json', 'r') as fp:
+    with open('config.json', 'r') as fp:
         bridge_config = json.load(fp)
         print("Config loaded")
 except Exception:
@@ -179,7 +190,7 @@ def loadConfig():  #load and configure alarm virtual light
                 print("Mail test failed")
 loadConfig()
 
-def saveConfig(filename='/opt/hue-emulator/config.json'):
+def saveConfig(filename='config.json'):
     with open(filename, 'w') as fp:
         json.dump(bridge_config, fp, sort_keys=True, indent=4, separators=(',', ': '))
 
@@ -472,7 +483,6 @@ def sendLightRequest(light, data):
                 elif key == "xy":
                     payload["color"] = {}
                     (payload["color"]["r"], payload["color"]["g"], payload["color"]["b"]) = convert_xy(value[0], value[1], bridge_config["lights"][light]["state"]["bri"])
-            print(json.dumps(payload))
         elif bridge_config["lights_address"][light]["protocol"] == "yeelight": #YeeLight bulb
             url = "http://" + str(bridge_config["lights_address"][light]["ip"])
             method = 'TCP'
@@ -498,8 +508,6 @@ def sendLightRequest(light, data):
                     payload["set_rgb"] = [(color[0] * 65536) + (color[1] * 256) + color[2], "smooth", transitiontime] #according to docs, yeelight needs this to set rgb. its r * 65536 + g * 256 + b
                 elif key == "alert" and value != "none":
                     payload["start_cf"] = [ 4, 0, "1000, 2, 5500, 100, 1000, 2, 5500, 1, 1000, 2, 5500, 100, 1000, 2, 5500, 1"]
-
-
         elif bridge_config["lights_address"][light]["protocol"] == "ikea_tradfri": #IKEA Tradfri bulb
             url = "coaps://" + bridge_config["lights_address"][light]["ip"] + ":5684/15001/" + str(bridge_config["lights_address"][light]["device_id"])
             for key, value in data.items():
@@ -541,7 +549,6 @@ def sendLightRequest(light, data):
                 payload["5850"] = 0
             elif "5850" in payload and "5851" in payload: #when setting brightness don't send also power on command
                 del payload["5850"]
-
         try:
             if bridge_config["lights_address"][light]["protocol"] == "ikea_tradfri":
                 if "5712" not in payload:
@@ -566,14 +573,36 @@ def sendLightRequest(light, data):
                     sleep(1)
                 if len(color) != 0:
                     sendRequest(url, method, json.dumps(color))
+            elif bridge_config["lights_address"][light]["protocol"] == "particle":
+                print("Request: ", data)
+                if data.get('xy', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-color"
+                    color = convert_xy(data['xy'][0], data['xy'][1], bridge_config["lights"][light]["state"]["bri"])
+                    payload['arg'] = "{},{},{}".format(color[0], color[1], color[2])
+                if data.get('bri', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-brightness"
+                    payload['arg'] = data['bri']
+                if data.get('on', None) is not None:
+                    if data['on'] is True:
+                        url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-on"
+                    elif data['on'] is False:
+                        url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-off"
+
+                print("Request URL: ", url)
+                print("Payload: ", json.dumps(payload, indent=2))
+                payload['access_token'] = bridge_config['particle']['access_token']
+                head = {"Content-type": "application/x-www-form-urlencoded"}
+                response = requests.post(url, data=payload, timeout=3, headers=head)
+                print("Response: ", json.dumps(json.loads(response.text), indent=2))
             else:
-                sendRequest(url, method, json.dumps(payload))
-        except:
+                sendRequest(url, 'POST', json.dumps())
+        except Exception as ex:
+            print("Exception: ", ex)
+            print("Exception dict: ", ex.__dict__)
             bridge_config["lights"][light]["state"]["reachable"] = False
-            print("request error")
         else:
             bridge_config["lights"][light]["state"]["reachable"] = True
-            print("LightRequest: " + url)
+
 
 def updateGroupStats(light): #set group stats based on lights status in that group
     for group in bridge_config["groups"]:
@@ -690,7 +719,7 @@ def syncWithLights(): #update Hue Bridge lights states
             try:
                 if bridge_config["lights_address"][light]["protocol"] == "native":
                     light_data = json.loads(sendRequest("http://" + bridge_config["lights_address"][light]["ip"] + "/get?light=" + str(bridge_config["lights_address"][light]["light_nr"]), "GET", "{}"))
-                    bridge_config["lights"][light]["state"].update(light_data)
+                    ["lights"][light]["state"].update(light_data)
                 elif bridge_config["lights_address"][light]["protocol"] == "hue":
                     light_data = json.loads(sendRequest("http://" + bridge_config["lights_address"][light]["ip"] + "/api/" + bridge_config["lights_address"][light]["username"] + "/lights/" + bridge_config["lights_address"][light]["light_id"], "GET", "{}"))
                     bridge_config["lights"][light]["state"].update(light_data["state"])
@@ -1347,12 +1376,9 @@ class S(BaseHTTPRequestHandler):
 
     def do_PUT(self):
         self._set_headers()
-        print ("in PUT method")
         self.data_string = self.rfile.read(int(self.headers['Content-Length']))
         put_dictionary = json.loads(self.data_string.decode('utf8'))
         url_pices = self.path.split('/')
-        print(self.path)
-        print(self.data_string)
         if url_pices[2] in bridge_config["config"]["whitelist"]:
             if len(url_pices) == 4:
                 bridge_config[url_pices[3]].update(put_dictionary)
@@ -1386,7 +1412,7 @@ class S(BaseHTTPRequestHandler):
                     if "active" in put_dictionary["stream"]:
                         if put_dictionary["stream"]["active"]:
                             print("start hue entertainment")
-                            Popen(["/opt/hue-emulator/entertainment-srv", "server_port=2100", "dtls=1", "psk_list=" + url_pices[2] + ",321c0c2ebfa7361e55491095b2f5f9db"])
+                            Popen(["entertainment-srv", "server_port=2100", "dtls=1", "psk_list=" + url_pices[2] + ",321c0c2ebfa7361e55491095b2f5f9db"])
                             sleep(0.2)
                             bridge_config["groups"][url_pices[4]]["stream"].update({"active": True, "owner": url_pices[2], "proxymode": "auto", "proxynode": "/bridge"})
                         else:
@@ -1403,7 +1429,7 @@ class S(BaseHTTPRequestHandler):
                         if "active" in put_dictionary:
                             if put_dictionary["active"]:
                                 print("start hue entertainment")
-                                Popen(["/opt/hue-emulator/entertainment-srv", "server_port=2100", "dtls=1", "psk_list=" + url_pices[2] + ",321c0c2ebfa7361e55491095b2f5f9db"])
+                                Popen(["entertainment-srv", "server_port=2100", "dtls=1", "psk_list=" + url_pices[2] + ",321c0c2ebfa7361e55491095b2f5f9db"])
                                 sleep(0.2)
                                 bridge_config["groups"][url_pices[4]]["stream"].update({"active": True, "owner": url_pices[2], "proxymode": "auto", "proxynode": "/bridge"})
                             else:
@@ -1539,10 +1565,10 @@ def run(https, server_class=ThreadingSimpleServer, handler_class=S):
     if https:
         server_address = ('', 443)
         httpd = server_class(server_address, handler_class)
-        httpd.socket = ssl.wrap_socket(httpd.socket, certfile='cert.pem', server_side=True, ssl_version=ssl.PROTOCOL_TLSv1_2)
+        httpd.socket = ssl.wrap_socket(httpd.socket, certfile='cert.pem', server_side=True, ssl_version=ssl.PROTOCOL_SSLv23)
         print ('Starting ssl httpd...')
     else:
-        server_address = ('', 9001)
+        server_address = ('', 80)
         httpd = server_class(server_address, handler_class)
         print ('Starting httpd...')
     httpd.serve_forever()
@@ -1560,7 +1586,7 @@ if __name__ == "__main__":
         Thread(target=syncWithLights).start()
         Thread(target=entertainmentService).start()
         Thread(target=run, args=[False]).start()
-        #Thread(target=run, args=[True]).start()
+        Thread(target=run, args=[True]).start()
         while True:
             sleep(10)
     except Exception as e:

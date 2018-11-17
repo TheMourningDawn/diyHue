@@ -3,3 +3,9 @@ __pycache__
 BridgeEmulator/web-ui/public/config.js
 BridgeEmulator/web-ui/public/config.js
 node_modules
+.idea/
+BridgeEmulator/cert.pem
+BridgeEmulator/coap-client-linux
+BridgeEmulator/config-backup-2018-07-29.json
+BridgeEmulator/entertainment-armv7l
+BridgeEmulator/env/
