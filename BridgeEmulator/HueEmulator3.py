@@ -49,20 +49,26 @@ if args.debug and (args.debug == "true" or args.debug == "True"):
     ch.setFormatter(formatter)
     root.addHandler(ch)
 
+if args.ip:
+    HostIP = args.ip
+    print("Host IP given as " + HostIP)
+else:
+    HostIP = getIpAddress()
+
 if args.mac:
     dockerMAC = args.mac
     mac = str(args.mac).replace(":","")
     print("Host MAC given as " + mac)
 else:
-    dockerMAC = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8')[:-1]
-    mac = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8').replace(":","")[:-1]
+    # dockerMAC = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8')[:-1]
+    # mac = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8').replace(":","")[:-1]
+    # mac = check_output("cat /sys/class/net/$(ip -o addr | grep " + getIpAddress() + " | awk '{print $2}')/address", shell=True).decode('utf-8').replace(":","")[:-1]
+    # mac = check_output("ifconfig en1 | awk '/ether/{print $2}", shell=True).decode('utf-8').replace(":","")[:-1]
+    # mac = uuid.getnode()
+    mac = ''.join(['{:02x}'.format((uuid.getnode() >> ele) & 0xff)
+              for ele in range(0, 8 * 6, 8)][::-1])
+    print("FUCK MAN WTF IS THIS SHIT: ", mac)
 logging.debug(mac)
-
-if args.ip:
-    HostIP = args.ip
-    print("Host IP given as " + HostIP)
-else:
-    HostIP= getIpAddress()
 
 if args.docker:
     print("Docker Setup Initiated")
@@ -118,7 +124,8 @@ def updateConfig():
     #set entertainment streaming to inactive on start/restart
     for group in bridge_config["groups"].keys():
         if bridge_config["groups"][group]["type"] == "Entertainment":
-            bridge_config["groups"][group]["stream"].update({"active": False, "owner": None})
+            pass
+            # bridge_config["groups"][group]["stream"].update({"active": False, "owner": None})
     #fix timezones bug
     if "values" not in bridge_config["capabilities"]["timezones"]:
         timezones = bridge_config["capabilities"]["timezones"]
