@@ -9,6 +9,8 @@ import random
 import socket
 import ssl
 import sys
+import uuid
+
 import requests
 from collections import defaultdict
 from datetime import datetime, timedelta
@@ -50,7 +52,7 @@ if args.debug and (args.debug == "true" or args.debug == "True"):
 if args.mac:
     dockerMAC = args.mac
     mac = str(args.mac).replace(":","")
-    print("Host MAC given as " + mac) 
+    print("Host MAC given as " + mac)
 else:
     dockerMAC = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8')[:-1]
     mac = check_output("cat /sys/class/net/$(ip -o addr | grep " + HostIP + " | awk '{print $2}')/address", shell=True).decode('utf-8').replace(":","")[:-1]
@@ -58,15 +60,15 @@ logging.debug(mac)
 
 if args.ip:
     HostIP = args.ip
-    print("Host IP given as " + HostIP) 
+    print("Host IP given as " + HostIP)
 else:
     HostIP= getIpAddress()
 
 if args.docker:
-    print("Docker Setup Initiated") 
+    print("Docker Setup Initiated")
     docker = True
     dockerSetup(dockerMAC)
-    print("Docker Setup Complete") 
+    print("Docker Setup Complete")
 
 else:
     docker = False
