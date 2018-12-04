@@ -495,13 +495,13 @@
         }
     },
     "config": {
-        "UTC": "2018-12-04T02:26:41",
+        "UTC": "2018-12-04T04:28:31",
         "apiversion": "1.24.0",
         "backup": {
             "errorcode": 0,
             "status": "idle"
         },
-        "bridgeid": "B827EBFFFEF86398",
+        "bridgeid": "260009FFFE507401",
         "datastoreversion": "70",
         "dhcp": true,
         "factorynew": false,
@@ -512,12 +512,12 @@
             "swupdate": "connected",
             "time": "connected"
         },
-        "ipaddress": "192.168.1.107",
+        "ipaddress": "192.168.1.116",
         "linkbutton": false,
-        "localtime": "2018-12-03T20:26:41",
-        "mac": "b8:27:eb:f8:63:98",
+        "localtime": "2018-12-03T22:28:31",
+        "mac": "26:00:09:50:74:01",
         "modelid": "BSB002",
-        "name": "Custom Proxy",
+        "name": "testing proxy",
         "netmask": "255.255.255.0",
         "portalconnection": "connected",
         "portalservices": true,
@@ -565,8 +565,8 @@
                 "name": "all 4 hue#Pixel 2 XL"
             },
             "a7161538be80d40b3de98dece6e91f90": {
-                "create date": "2018-12-04T02:25:11",
-                "last use date": "2018-12-03T20:26:41",
+                "create date": "2018-12-04T02:39:05",
+                "last use date": "2018-12-03T22:28:31",
                 "name": "Hue Essentials#Pixel 2 XL"
             }
         },
@@ -578,562 +578,191 @@
         "port": 8080,
         "sensors": {}
     },
-    "groups": {},
-    "lights": {
+    "groups": {
         "1": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Island 1",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
+            "action": {
+                "bri": 1,
+                "ct": 153,
+                "hue": 21112,
                 "on": true,
-                "reachable": true,
-                "sat": 199,
-                "transitiontime": 4,
+                "sat": 254,
                 "xy": [
-                    0.5016,
-                    0.4151
+                    0.2614,
+                    0.6313
                 ]
             },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:45",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:02:bf:1f-0b"
-        },
-        "10": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Paper lamp",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
+            "class": "Living room",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "name": "Living room",
             "state": {
-                "alert": "select",
-                "bri": 121,
-                "colormode": "xy",
-                "ct": 366,
-                "effect": "none",
-                "hue": 8402,
-                "mode": "homeautomation",
+                "all_on": true,
+                "any_on": true
+            },
+            "type": "Room"
+        },
+        "2": {
+            "action": {
+                "bri": 65,
+                "ct": 367,
+                "hue": 8418,
                 "on": true,
-                "reachable": true,
                 "sat": 140,
                 "xy": [
+                    0.4573,
+                    0.41
+                ]
+            },
+            "class": "Kitchen",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "name": "Kitchen",
+            "state": {
+                "all_on": true,
+                "any_on": true
+            },
+            "type": "Room"
+        },
+        "3": {
+            "action": {
+                "bri": 77,
+                "hue": 0,
+                "on": true,
+                "sat": 250
+            },
+            "class": "Bathroom",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "name": "Bathroom",
+            "state": {
+                "all_on": true,
+                "any_on": true
+            },
+            "type": "Room"
+        },
+        "4": {
+            "action": {
+                "bri": 77,
+                "ct": 367,
+                "hue": 8418,
+                "on": true,
+                "sat": 140,
+                "xy": [
+                    0.4573,
+                    0.41
+                ]
+            },
+            "class": "Dining",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "name": "Dining",
+            "state": {
+                "all_on": true,
+                "any_on": true
+            },
+            "type": "Room"
+        },
+        "5": {
+            "action": {
+                "bri": 77,
+                "ct": 367,
+                "hue": 14988,
+                "on": true,
+                "sat": 141,
+                "xy": [
                     0.4575,
-                    0.4099
+                    0.4101
                 ]
             },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-06T07:59:45",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:f8:7e:6b-0b"
-        },
-        "11": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Livingroom fan 1",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
+            "class": "Bedroom",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "name": "Bedroom",
             "state": {
-                "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 432,
-                "effect": "none",
-                "hue": 62836,
-                "mode": "homeautomation",
+                "all_on": true,
+                "any_on": true
+            },
+            "type": "Room"
+        },
+        "6": {
+            "action": {
+                "bri": 1,
+                "ct": 153,
+                "hue": 21112,
                 "on": true,
-                "reachable": true,
-                "sat": 125,
+                "sat": 254,
                 "xy": [
-                    0.4947,
-                    0.3243
+                    0.2614,
+                    0.6313
                 ]
             },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-06T08:00:18",
-                "state": "noupdates"
+            "class": "TV",
+            "lights": [
+                "16",
+                "11",
+                "10",
+                "14",
+                "7",
+                "15"
+            ],
+            "locations": {
+                "10": [
+                    0.8120689392089844,
+                    -0.7413793206214905,
+                    0.0
+                ],
+                "11": [
+                    -0.815517246723175,
+                    -0.7431034445762634,
+                    0.0
+                ],
+                "14": [
+                    0.01034482754766941,
+                    0.08620689809322357,
+                    0.0
+                ],
+                "15": [
+                    0.7534482479095459,
+                    0.4000000059604645,
+                    0.0
+                ],
+                "16": [
+                    -0.8,
+                    0.4,
+                    0.0
+                ],
+                "7": [
+                    0.017241379246115685,
+                    -0.08620689809322357,
+                    0.0
+                ]
             },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:84:25:87-0b"
-        },
-        "12": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "maxlumen": 840,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": false
-                }
-            },
-            "config": {
-                "archetype": "classicbulb",
-                "direction": "omnidirectional",
-                "function": "functional"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LWB014",
-            "name": "Bathroom 1",
-            "productid": "Philips-LWB014-1-A19DLv4",
-            "productname": "Hue white lamp",
+            "name": "Entertainment area livingroom",
             "state": {
-                "alert": "none",
-                "bri": 249,
-                "ct": 179,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "xy": [
-                    0.3306,
-                    0.1359
-                ]
+                "all_on": true,
+                "any_on": true
             },
-            "swconfigid": "321D79EA",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:48",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Dimmable light",
-            "uniqueid": "00:17:88:01:04:1d:7d:87-0b"
-        },
-        "13": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "maxlumen": 840,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": false
-                }
-            },
-            "config": {
-                "archetype": "classicbulb",
-                "direction": "omnidirectional",
-                "function": "functional"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LWB014",
-            "name": "Bathroom 2",
-            "productid": "Philips-LWB014-1-A19DLv4",
-            "productname": "Hue white lamp",
-            "state": {
-                "alert": "none",
-                "bri": 249,
-                "ct": 179,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "xy": [
-                    0.3306,
-                    0.1359
-                ]
-            },
-            "swconfigid": "321D79EA",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:43",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Dimmable light",
-            "uniqueid": "00:17:88:01:04:1d:20:a7-0b"
-        },
-        "14": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Island 2",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 199,
-                "transitiontime": 4,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:41",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:7c:94:fc-0b"
-        },
-        "15": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "Awesome",
-            "name": "Right Shelf",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 179,
-                "effect": "none",
-                "hue": 41442,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "sat": 75,
-                "transitiontime": 4,
-                "xy": [
-                    0.1833,
-                    0.0717
-                ]
-            },
-            "swconfigid": "FB3DCCB5",
-            "swupdate": {
-                "lastinstall": "2018-04-06T08:00:21",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
-        },
-        "16": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "Awesome",
-            "name": "Left Shelf",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 270,
-                "effect": "none",
-                "hue": 41442,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "sat": 75,
-                "transitiontime": 4,
-                "xy": [
-                    0.3306,
-                    0.1359
-                ]
-            },
-            "swconfigid": "FB3DCCB5",
-            "swupdate": {
-                "lastinstall": "2018-04-06T08:00:21",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
-        },
-        "17": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "Awesome",
-            "name": "TV Console",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 179,
-                "effect": "none",
-                "hue": 41442,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "sat": 75,
-                "transitiontime": 4,
-                "xy": [
-                    0.3306,
-                    0.1359
-                ]
-            },
-            "swconfigid": "FB3DCCB5",
-            "swupdate": {
-                "lastinstall": "2018-04-06T08:00:21",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:54:26:2f-0b"
-        },
-        "18": {
+            "type": "Entertainment"
+        }
+    },
+    "lights": {
+        "1": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -1174,19 +803,20 @@
             "name": "Bedroom fan 1",
             "productname": "Hue color lamp",
             "state": {
-                "alert": "none",
+                "alert": "select",
                 "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 13524,
+                "hue": 14988,
                 "mode": "homeautomation",
-                "on": false,
+                "on": true,
                 "reachable": true,
-                "sat": 200,
+                "sat": 141,
+                "transitiontime": 4,
                 "xy": [
-                    0.5017,
-                    0.4152
+                    0.4575,
+                    0.4101
                 ]
             },
             "swupdate": {
@@ -1197,539 +827,7 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:00:d8:59:3e-0b"
         },
-        "19": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.675,
-                            0.322
-                        ],
-                        [
-                            0.409,
-                            0.518
-                        ],
-                        [
-                            0.167,
-                            0.04
-                        ]
-                    ],
-                    "colorgamuttype": "B",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 600,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT001",
-            "name": "Bedroom fan 2",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 13524,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 200,
-                "xy": [
-                    0.5017,
-                    0.4152
-                ]
-            },
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:57",
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:00:fa:c1:fe-0b"
-        },
-        "2": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Entry door",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 1,
-                "colormode": "xy",
-                "ct": 366,
-                "effect": "none",
-                "hue": 8381,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 141,
-                "xy": [
-                    0.4583,
-                    0.4099
-                ]
-            },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-11T07:27:14",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:84:2b:32-0b"
-        },
-        "20": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.675,
-                            0.322
-                        ],
-                        [
-                            0.409,
-                            0.518
-                        ],
-                        [
-                            0.167,
-                            0.04
-                        ]
-                    ],
-                    "colorgamuttype": "B",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 600,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT001",
-            "name": "Hallway",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 75,
-                "colormode": "xy",
-                "ct": 153,
-                "effect": "none",
-                "hue": 65199,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 248,
-                "xy": [
-                    0.659,
-                    0.3182
-                ]
-            },
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:55",
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:00:d8:59:98-0b"
-        },
-        "21": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 300,
-                    "mindimlevel": 40
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "huego",
-                "direction": "omnidirectional",
-                "function": "decorative"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LLC020",
-            "name": "Go Lamp",
-            "productname": "Hue go",
-            "state": {
-                "alert": "select",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 199,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:02",
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:02:14:56:1f-0b"
-        },
-        "22": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT014",
-            "name": "Entry Door",
-            "productid": "Philips-LCT014-2-A19ECLv4",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 199,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swconfigid": "46F127F3",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:38",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:02:8f:1b:b4-0b"
-        },
-        "23": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Island 2",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "sat": 199,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:45",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:02:bf:1f-0b"
-        },
-        "24": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Livingroom Fan 2",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 199,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:41",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:7c:94:fc-0b"
-        },
-        "25": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "maxlumen": 840,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": false
-                }
-            },
-            "config": {
-                "archetype": "classicbulb",
-                "direction": "omnidirectional",
-                "function": "functional"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LWB014",
-            "name": "Bathroom 1",
-            "productid": "Philips-LWB014-1-A19DLv4",
-            "productname": "Hue white lamp",
-            "state": {
-                "alert": "none",
-                "bri": 249,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true
-            },
-            "swconfigid": "321D79EA",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:48",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Dimmable light",
-            "uniqueid": "00:17:88:01:04:1d:7d:87-0b"
-        },
-        "26": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "maxlumen": 840,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": false
-                }
-            },
-            "config": {
-                "archetype": "classicbulb",
-                "direction": "omnidirectional",
-                "function": "functional"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LWB014",
-            "name": "Bathroom 2",
-            "productid": "Philips-LWB014-1-A19DLv4",
-            "productname": "Hue white lamp",
-            "state": {
-                "alert": "none",
-                "bri": 249,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true
-            },
-            "swconfigid": "321D79EA",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:43",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Dimmable light",
-            "uniqueid": "00:17:88:01:04:1d:20:a7-0b"
-        },
-        "27": {
+        "10": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -1772,18 +870,19 @@
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 81,
-                "colormode": "xy",
-                "ct": 366,
+                "bri": 65,
+                "colormode": "hs",
+                "ct": 153,
                 "effect": "none",
-                "hue": 8402,
+                "hue": 22204,
                 "mode": "homeautomation",
                 "on": true,
                 "reachable": true,
-                "sat": 140,
+                "sat": 254,
+                "transitiontime": 9,
                 "xy": [
-                    0.4575,
-                    0.4099
+                    0.2392,
+                    0.648
                 ]
             },
             "swconfigid": "FB3DCCB4",
@@ -1795,7 +894,7 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:03:de:6f:a3-0b"
         },
-        "28": {
+        "11": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -1838,18 +937,19 @@
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 121,
-                "colormode": "xy",
-                "ct": 366,
+                "bri": 65,
+                "colormode": "hs",
+                "ct": 153,
                 "effect": "none",
-                "hue": 8402,
+                "hue": 21658,
                 "mode": "homeautomation",
                 "on": true,
                 "reachable": true,
-                "sat": 140,
+                "sat": 254,
+                "transitiontime": 9,
                 "xy": [
-                    0.4575,
-                    0.4099
+                    0.2503,
+                    0.6397
                 ]
             },
             "swconfigid": "FB3DCCB4",
@@ -1861,7 +961,7 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:03:f8:7e:6b-0b"
         },
-        "29": {
+        "12": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -1904,18 +1004,19 @@
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 432,
+                "bri": 65,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 62836,
+                "hue": 8418,
                 "mode": "homeautomation",
                 "on": true,
                 "reachable": true,
-                "sat": 125,
+                "sat": 140,
+                "transitiontime": 4,
                 "xy": [
-                    0.4947,
-                    0.3243
+                    0.4573,
+                    0.41
                 ]
             },
             "swconfigid": "FB3DCCB4",
@@ -1927,73 +1028,7 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:03:84:25:87-0b"
         },
-        "3": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 800,
-                    "mindimlevel": 1000
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT016",
-            "name": "Side table lamp",
-            "productid": "Philips-LCT016-1-A19ECLv5",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "select",
-                "bri": 81,
-                "colormode": "xy",
-                "ct": 366,
-                "effect": "none",
-                "hue": 8402,
-                "mode": "homeautomation",
-                "on": true,
-                "reachable": true,
-                "sat": 140,
-                "xy": [
-                    0.4575,
-                    0.4099
-                ]
-            },
-            "swconfigid": "FB3DCCB4",
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:35",
-                "state": "noupdates"
-            },
-            "swversion": "1.29.0_r21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:de:6f:a3-0b"
-        },
-        "30": {
+        "13": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -2036,18 +1071,19 @@
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 153,
+                "bri": 65,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 47134,
+                "hue": 8418,
                 "mode": "homeautomation",
                 "on": true,
                 "reachable": true,
-                "sat": 201,
+                "sat": 140,
+                "transitiontime": 4,
                 "xy": [
-                    0.2013,
-                    0.1166
+                    0.4573,
+                    0.41
                 ]
             },
             "swconfigid": "FB3DCCB4",
@@ -2059,7 +1095,7 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:03:84:26:2f-0b"
         },
-        "31": {
+        "14": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -2102,18 +1138,19 @@
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 1,
-                "colormode": "xy",
-                "ct": 366,
+                "bri": 213,
+                "colormode": "hs",
+                "ct": 153,
                 "effect": "none",
-                "hue": 8381,
+                "hue": 44408,
                 "mode": "homeautomation",
-                "on": false,
+                "on": true,
                 "reachable": true,
-                "sat": 141,
+                "sat": 254,
+                "transitiontime": 9,
                 "xy": [
-                    0.4583,
-                    0.4099
+                    0.1553,
+                    0.1293
                 ]
             },
             "swconfigid": "FB3DCCB4",
@@ -2125,7 +1162,113 @@
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:03:84:2b:32-0b"
         },
-        "4": {
+        "15": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 255,
+                        "min": 80
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "manufacturername": "CharlieHendricks",
+            "modelid": "AmbientBeats",
+            "name": "Right Shelf",
+            "productname": "AmbientBeats Shelf",
+            "state": {
+                "alert": "select",
+                "bri": 189,
+                "colormode": "hs",
+                "ct": 367,
+                "effect": "none",
+                "hue": 22386,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 254,
+                "transitiontime": 9,
+                "xy": [
+                    0.1833,
+                    0.0717
+                ]
+            }
+        },
+        "16": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 255,
+                        "min": 80
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "manufacturername": "CharlieHendricks",
+            "modelid": "AmbientBeats",
+            "name": "Left Shelf",
+            "productname": "AmbientBeats Shelf",
+            "state": {
+                "alert": "select",
+                "bri": 99,
+                "colormode": "hs",
+                "ct": 367,
+                "effect": "none",
+                "hue": 23478,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 254,
+                "transitiontime": 9,
+                "xy": [
+                    0.1833,
+                    0.0717
+                ]
+            }
+        },
+        "2": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -2166,19 +1309,20 @@
             "name": "Bedroom fan 2",
             "productname": "Hue color lamp",
             "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
+                "alert": "select",
+                "bri": 77,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 13524,
+                "hue": 14988,
                 "mode": "homeautomation",
-                "on": false,
+                "on": true,
                 "reachable": true,
-                "sat": 200,
+                "sat": 141,
+                "transitiontime": 4,
                 "xy": [
-                    0.5017,
-                    0.4152
+                    0.4575,
+                    0.4101
                 ]
             },
             "swupdate": {
@@ -2188,6 +1332,136 @@
             "swversion": "5.105.0.21169",
             "type": "Extended color light",
             "uniqueid": "00:17:88:01:00:fa:c1:fe-0b"
+        },
+        "3": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.675,
+                            0.322
+                        ],
+                        [
+                            0.409,
+                            0.518
+                        ],
+                        [
+                            0.167,
+                            0.04
+                        ]
+                    ],
+                    "colorgamuttype": "B",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 600,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT001",
+            "name": "Hallway",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "select",
+                "bri": 77,
+                "colormode": "ct",
+                "ct": 367,
+                "effect": "none",
+                "hue": 14988,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 141,
+                "transitiontime": 4,
+                "xy": [
+                    0.4575,
+                    0.4101
+                ]
+            },
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:55",
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:00:d8:59:98-0b"
+        },
+        "4": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 300,
+                    "mindimlevel": 40
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "huego",
+                "direction": "omnidirectional",
+                "function": "decorative"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LLC020",
+            "name": "Go Lamp",
+            "productname": "Hue go",
+            "state": {
+                "alert": "select",
+                "bri": 77,
+                "colormode": "ct",
+                "ct": 367,
+                "effect": "none",
+                "hue": 8418,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 140,
+                "transitiontime": 4,
+                "xy": [
+                    0.4573,
+                    0.41
+                ]
+            },
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:02",
+                "state": "noupdates"
+            },
+            "swversion": "5.105.0.21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:02:14:56:1f-0b"
         },
         "5": {
             "capabilities": {
@@ -2227,23 +1501,24 @@
             },
             "manufacturername": "Philips",
             "modelid": "LCT014",
-            "name": "Island 3",
+            "name": "Entry Door",
             "productid": "Philips-LCT014-2-A19ECLv4",
             "productname": "Hue color lamp",
             "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
+                "alert": "select",
+                "bri": 77,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 7676,
+                "hue": 8418,
                 "mode": "homeautomation",
-                "on": false,
+                "on": true,
                 "reachable": true,
-                "sat": 199,
+                "sat": 140,
+                "transitiontime": 4,
                 "xy": [
-                    0.5016,
-                    0.4151
+                    0.4573,
+                    0.41
                 ]
             },
             "swconfigid": "46F127F3",
@@ -2256,199 +1531,6 @@
             "uniqueid": "00:17:88:01:02:8f:1b:b4-0b"
         },
         "6": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.675,
-                            0.322
-                        ],
-                        [
-                            0.409,
-                            0.518
-                        ],
-                        [
-                            0.167,
-                            0.04
-                        ]
-                    ],
-                    "colorgamuttype": "B",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 600,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT001",
-            "name": "Dining room",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 75,
-                "colormode": "xy",
-                "ct": 153,
-                "effect": "none",
-                "hue": 65199,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 248,
-                "xy": [
-                    0.659,
-                    0.3182
-                ]
-            },
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:55",
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:00:d8:59:98-0b"
-        },
-        "7": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.6915,
-                            0.3083
-                        ],
-                        [
-                            0.17,
-                            0.7
-                        ],
-                        [
-                            0.1532,
-                            0.0475
-                        ]
-                    ],
-                    "colorgamuttype": "C",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 300,
-                    "mindimlevel": 40
-                },
-                "streaming": {
-                    "proxy": true,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "huego",
-                "direction": "omnidirectional",
-                "function": "decorative"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LLC020",
-            "name": "Bedroom Go Lamp",
-            "productname": "Hue go",
-            "state": {
-                "alert": "select",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 7676,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 199,
-                "transitiontime": 4,
-                "xy": [
-                    0.5016,
-                    0.4151
-                ]
-            },
-            "swupdate": {
-                "lastinstall": "2018-04-05T00:37:02",
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:02:14:56:1f-0b"
-        },
-        "8": {
-            "capabilities": {
-                "certified": true,
-                "control": {
-                    "colorgamut": [
-                        [
-                            0.675,
-                            0.322
-                        ],
-                        [
-                            0.409,
-                            0.518
-                        ],
-                        [
-                            0.167,
-                            0.04
-                        ]
-                    ],
-                    "colorgamuttype": "B",
-                    "ct": {
-                        "max": 500,
-                        "min": 153
-                    },
-                    "maxlumen": 600,
-                    "mindimlevel": 5000
-                },
-                "streaming": {
-                    "proxy": false,
-                    "renderer": true
-                }
-            },
-            "config": {
-                "archetype": "sultanbulb",
-                "direction": "omnidirectional",
-                "function": "mixed"
-            },
-            "manufacturername": "Philips",
-            "modelid": "LCT001",
-            "name": "Bedroom fan 1",
-            "productname": "Hue color lamp",
-            "state": {
-                "alert": "none",
-                "bri": 254,
-                "colormode": "xy",
-                "ct": 443,
-                "effect": "none",
-                "hue": 13524,
-                "mode": "homeautomation",
-                "on": false,
-                "reachable": true,
-                "sat": 200,
-                "xy": [
-                    0.5017,
-                    0.4152
-                ]
-            },
-            "swupdate": {
-                "lastinstall": null,
-                "state": "noupdates"
-            },
-            "swversion": "5.105.0.21169",
-            "type": "Extended color light",
-            "uniqueid": "00:17:88:01:00:d8:59:3e-0b"
-        },
-        "9": {
             "capabilities": {
                 "certified": true,
                 "control": {
@@ -2486,71 +1568,223 @@
             },
             "manufacturername": "Philips",
             "modelid": "LCT016",
-            "name": "Livingroom fan 2",
+            "name": "Island 2",
             "productid": "Philips-LCT016-1-A19ECLv5",
             "productname": "Hue color lamp",
             "state": {
                 "alert": "select",
-                "bri": 249,
-                "colormode": "xy",
-                "ct": 153,
+                "bri": 77,
+                "colormode": "ct",
+                "ct": 367,
                 "effect": "none",
-                "hue": 47134,
+                "hue": 8418,
                 "mode": "homeautomation",
                 "on": true,
                 "reachable": true,
-                "sat": 201,
+                "sat": 140,
+                "transitiontime": 4,
                 "xy": [
-                    0.2013,
-                    0.1166
+                    0.4573,
+                    0.41
                 ]
             },
             "swconfigid": "FB3DCCB4",
             "swupdate": {
-                "lastinstall": "2018-04-06T08:00:21",
+                "lastinstall": "2018-04-05T00:37:45",
                 "state": "noupdates"
             },
             "swversion": "1.29.0_r21169",
             "type": "Extended color light",
-            "uniqueid": "00:17:88:01:03:84:26:2f-0b"
+            "uniqueid": "00:17:88:01:03:02:bf:1f-0b"
+        },
+        "7": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "colorgamuttype": "C",
+                    "ct": {
+                        "max": 500,
+                        "min": 153
+                    },
+                    "maxlumen": 800,
+                    "mindimlevel": 1000
+                },
+                "streaming": {
+                    "proxy": true,
+                    "renderer": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "direction": "omnidirectional",
+                "function": "mixed"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LCT016",
+            "name": "Livingroom Fan 2",
+            "productid": "Philips-LCT016-1-A19ECLv5",
+            "productname": "Hue color lamp",
+            "state": {
+                "alert": "select",
+                "bri": 1,
+                "colormode": "hs",
+                "ct": 153,
+                "effect": "none",
+                "hue": 21112,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 254,
+                "transitiontime": 9,
+                "xy": [
+                    0.2614,
+                    0.6313
+                ]
+            },
+            "swconfigid": "FB3DCCB4",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:41",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Extended color light",
+            "uniqueid": "00:17:88:01:03:7c:94:fc-0b"
+        },
+        "8": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "maxlumen": 840,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": false
+                }
+            },
+            "config": {
+                "archetype": "classicbulb",
+                "direction": "omnidirectional",
+                "function": "functional"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LWB014",
+            "name": "Bathroom 1",
+            "productid": "Philips-LWB014-1-A19DLv4",
+            "productname": "Hue white lamp",
+            "state": {
+                "alert": "select",
+                "bri": 77,
+                "colormode": "hs",
+                "hue": 20020,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 250,
+                "transitiontime": 4
+            },
+            "swconfigid": "321D79EA",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:48",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Dimmable light",
+            "uniqueid": "00:17:88:01:04:1d:7d:87-0b"
+        },
+        "9": {
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "maxlumen": 840,
+                    "mindimlevel": 5000
+                },
+                "streaming": {
+                    "proxy": false,
+                    "renderer": false
+                }
+            },
+            "config": {
+                "archetype": "classicbulb",
+                "direction": "omnidirectional",
+                "function": "functional"
+            },
+            "manufacturername": "Philips",
+            "modelid": "LWB014",
+            "name": "Bathroom 2",
+            "productid": "Philips-LWB014-1-A19DLv4",
+            "productname": "Hue white lamp",
+            "state": {
+                "alert": "select",
+                "bri": 77,
+                "colormode": "hs",
+                "hue": 0,
+                "mode": "homeautomation",
+                "on": true,
+                "reachable": true,
+                "sat": 250,
+                "transitiontime": 4
+            },
+            "swconfigid": "321D79EA",
+            "swupdate": {
+                "lastinstall": "2018-04-05T00:37:43",
+                "state": "noupdates"
+            },
+            "swversion": "1.29.0_r21169",
+            "type": "Dimmable light",
+            "uniqueid": "00:17:88:01:04:1d:20:a7-0b"
         }
     },
     "lights_address": {
         "1": {
             "ip": "192.168.1.148",
-            "light_id": "6",
+            "light_id": "1",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "10": {
             "ip": "192.168.1.148",
-            "light_id": "11",
+            "light_id": "10",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "11": {
             "ip": "192.168.1.148",
-            "light_id": "12",
+            "light_id": "11",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "12": {
             "ip": "192.168.1.148",
-            "light_id": "8",
+            "light_id": "12",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "13": {
             "ip": "192.168.1.148",
-            "light_id": "9",
+            "light_id": "13",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "14": {
             "ip": "192.168.1.148",
-            "light_id": "7",
+            "light_id": "14",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "15": {
             "ip": "192.168.1.148",
@@ -2564,147 +1798,57 @@
             "protocol": "particle",
             "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
         },
-        "17": {
-            "ip": "192.168.1.148",
-            "light_id": "280018000c47343438323536",
-            "protocol": "particle",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
-        },
-        "18": {
-            "ip": "192.168.1.148",
-            "light_id": "1",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "19": {
+        "2": {
             "ip": "192.168.1.148",
             "light_id": "2",
             "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "2": {
-            "ip": "192.168.1.148",
-            "light_id": "14",
-            "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
-        },
-        "20": {
-            "ip": "192.168.1.148",
-            "light_id": "3",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "21": {
-            "ip": "192.168.1.148",
-            "light_id": "4",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "22": {
-            "ip": "192.168.1.148",
-            "light_id": "5",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "23": {
-            "ip": "192.168.1.148",
-            "light_id": "6",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "24": {
-            "ip": "192.168.1.148",
-            "light_id": "7",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "25": {
-            "ip": "192.168.1.148",
-            "light_id": "8",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "26": {
-            "ip": "192.168.1.148",
-            "light_id": "9",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "27": {
-            "ip": "192.168.1.148",
-            "light_id": "10",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "28": {
-            "ip": "192.168.1.148",
-            "light_id": "11",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "29": {
-            "ip": "192.168.1.148",
-            "light_id": "12",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "3": {
             "ip": "192.168.1.148",
-            "light_id": "10",
+            "light_id": "3",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
-        },
-        "30": {
-            "ip": "192.168.1.148",
-            "light_id": "13",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
-        },
-        "31": {
-            "ip": "192.168.1.148",
-            "light_id": "14",
-            "protocol": "hue",
-            "username": "Ttu6aE89FId8az1vGt4k2yh7zoVdqkmW7Essq1bu"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "4": {
             "ip": "192.168.1.148",
-            "light_id": "2",
+            "light_id": "4",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "5": {
             "ip": "192.168.1.148",
             "light_id": "5",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "6": {
             "ip": "192.168.1.148",
-            "light_id": "3",
+            "light_id": "6",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "7": {
             "ip": "192.168.1.148",
-            "light_id": "4",
+            "light_id": "7",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "8": {
             "ip": "192.168.1.148",
-            "light_id": "1",
+            "light_id": "8",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         },
         "9": {
             "ip": "192.168.1.148",
-            "light_id": "13",
+            "light_id": "9",
             "protocol": "hue",
-            "username": "WPLOXPYnrtqi2C17wft6T1qLR737VuvbHveP1ETI"
+            "username": "ClWvWVaqcFSGBAlTsB5h6f1S3wv8nXXtOndewTa9"
         }
     },
     "linkbutton": {
-        "lastlinkbuttonpushed": "1543890310",
+        "lastlinkbuttonpushed": "1543897752",
         "linkbutton_auth": "SHVlOkh1ZQ=="
     },
     "particle": {
@@ -2712,7 +1856,2038 @@
     },
     "resourcelinks": {},
     "rules": {},
-    "scenes": {},
+    "scenes": {
+        "1": {
+            "appdata": {
+                "data": "ykK3E_r00_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:43",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "10": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "11": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "12": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "13": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "14": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "15": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "16": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "2": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "3": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "4": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "5": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "6": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "7": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "8": {
+                    "bri": 144,
+                    "on": true
+                },
+                "9": {
+                    "bri": 144,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "10": {
+            "appdata": {
+                "data": "TMLUW_r01_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:54",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "11": {
+            "appdata": {
+                "data": "OgtRH_r01_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:54",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "12": {
+            "appdata": {
+                "data": "wO5w7_r01_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:55",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "13": {
+            "appdata": {
+                "data": "kprpc_r01_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:55",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "11": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "14": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "15": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "16": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "7": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "14": {
+            "appdata": {
+                "data": "3zZ3o_r01_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:56",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "11": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "14": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "15": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "16": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "7": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "15": {
+            "appdata": {
+                "data": "E1smL_r02_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:24",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "13": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "6": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "16": {
+            "appdata": {
+                "data": "d9l35_r02_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:24",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "17": {
+            "appdata": {
+                "data": "sD3aO_r02_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:24",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "18": {
+            "appdata": {
+                "data": "us7M0_r02_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:25",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "19": {
+            "appdata": {
+                "data": "y4hMN_r02_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:25",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "2": {
+            "appdata": {
+                "data": "KMZTG_r00_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:44",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "10": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "12": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "3": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "20": {
+            "appdata": {
+                "data": "czgAo_r02_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:25",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "13": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "6": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "21": {
+            "appdata": {
+                "data": "tdaTE_r02_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:25",
+            "lights": [
+                "12",
+                "6",
+                "13"
+            ],
+            "lightstates": {
+                "12": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "13": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "6": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "22": {
+            "appdata": {
+                "data": "MsjBk_r03_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:45",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 144,
+                    "on": true
+                },
+                "9": {
+                    "bri": 144,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "23": {
+            "appdata": {
+                "data": "riUfz_r03_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:45",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "24": {
+            "appdata": {
+                "data": "QYoqi_r03_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:45",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "25": {
+            "appdata": {
+                "data": "k477y_r03_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:45",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "26": {
+            "appdata": {
+                "data": "AoPrT_r03_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:46",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "27": {
+            "appdata": {
+                "data": "lCfXe_r03_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:46",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 77,
+                    "on": true
+                },
+                "9": {
+                    "bri": 77,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "28": {
+            "appdata": {
+                "data": "HJW8e_r03_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:50:46",
+            "lights": [
+                "8",
+                "9"
+            ],
+            "lightstates": {
+                "8": {
+                    "bri": 1,
+                    "on": true
+                },
+                "9": {
+                    "bri": 1,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "29": {
+            "appdata": {
+                "data": "A3g3p_r04_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:15",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "4": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "5": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "3": {
+            "appdata": {
+                "data": "EFAQ6_r00_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:46",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "10": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "12": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "3": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "30": {
+            "appdata": {
+                "data": "BeBCL_r04_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:15",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "31": {
+            "appdata": {
+                "data": "6qDPo_r04_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:15",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "32": {
+            "appdata": {
+                "data": "yWvwx_r04_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:15",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "33": {
+            "appdata": {
+                "data": "7ac8I_r04_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:16",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "34": {
+            "appdata": {
+                "data": "2fEkJ_r04_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:16",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "4": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "5": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "35": {
+            "appdata": {
+                "data": "N0khx_r04_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:16",
+            "lights": [
+                "5",
+                "4",
+                "3"
+            ],
+            "lightstates": {
+                "3": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "4": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "5": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "36": {
+            "appdata": {
+                "data": "Xxccy_r05_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:35",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "2": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "37": {
+            "appdata": {
+                "data": "8kkdj_r05_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:35",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "38": {
+            "appdata": {
+                "data": "5FWQ9_r05_d03",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:35",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 233,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Concentrate",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "39": {
+            "appdata": {
+                "data": "Wso90_r05_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:35",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "4": {
+            "appdata": {
+                "data": "5kpv8_r00_d04",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:47",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "10": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "12": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "3": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 156,
+                    "on": true
+                },
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Energize",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "40": {
+            "appdata": {
+                "data": "JSzbC_r05_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:35",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "41": {
+            "appdata": {
+                "data": "Nw3v9_r05_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:36",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "2": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "42": {
+            "appdata": {
+                "data": "sPaTv_r05_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:51:36",
+            "lights": [
+                "1",
+                "2"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "2": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "5": {
+            "appdata": {
+                "data": "zBykv_r00_d05",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:48",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "10": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "12": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "13": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "2": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "3": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "4": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "5": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "6": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 367,
+                    "on": true
+                },
+                "8": {
+                    "bri": 254,
+                    "on": true
+                },
+                "9": {
+                    "bri": 254,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Bright",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "6": {
+            "appdata": {
+                "data": "VvtAu_r00_d06",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:49",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "10": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "11": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "12": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "13": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "14": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "15": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "16": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "2": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "3": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "4": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "5": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "6": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "7": {
+                    "bri": 77,
+                    "ct": 367,
+                    "on": true
+                },
+                "8": {
+                    "bri": 77,
+                    "on": true
+                },
+                "9": {
+                    "bri": 77,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Dimmed",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "7": {
+            "appdata": {
+                "data": "5i1jU_r00_d07",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:47:50",
+            "lights": [
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "lightstates": {
+                "1": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "10": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "11": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "12": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "13": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "14": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "15": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "16": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "2": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "3": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "4": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "5": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "6": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "7": {
+                    "bri": 1,
+                    "ct": 447,
+                    "on": true
+                },
+                "8": {
+                    "bri": 1,
+                    "on": true
+                },
+                "9": {
+                    "bri": 1,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Nightlight",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "8": {
+            "appdata": {
+                "data": "oiY6B_r01_d01",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:53",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "11": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "14": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "15": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "16": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                },
+                "7": {
+                    "bri": 144,
+                    "ct": 447,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Relax",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        },
+        "9": {
+            "appdata": {
+                "data": "vr629_r01_d02",
+                "version": 1
+            },
+            "lastupdated": "2018-12-04T03:49:54",
+            "lights": [
+                "14",
+                "7",
+                "11",
+                "15",
+                "10",
+                "16"
+            ],
+            "lightstates": {
+                "10": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "11": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "14": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "15": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "16": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                },
+                "7": {
+                    "bri": 254,
+                    "ct": 346,
+                    "on": true
+                }
+            },
+            "locked": false,
+            "name": "Read",
+            "owner": "a7161538be80d40b3de98dece6e91f90",
+            "picture": "",
+            "recycle": false,
+            "version": 2
+        }
+    },
     "schedules": {},
     "sensors": {
         "1": {

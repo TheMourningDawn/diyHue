@@ -715,6 +715,11 @@ def sendLightRequest(light, data):
                     sendRequest(url, method, json.dumps(color))
             elif bridge_config["lights_address"][light]["protocol"] == "particle":
                 print("Request: ", data)
+                if data.get('hue', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-hue"
+                    color = data['hue']/256
+                    print("Trying to set color with: ", color)
+                    payload['arg'] = "{}".format(color)
                 if data.get('xy', None):
                     url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-color"
                     color = convert_xy(data['xy'][0], data['xy'][1], bridge_config["lights"][light]["state"]["bri"])
@@ -722,12 +727,14 @@ def sendLightRequest(light, data):
                 if data.get('bri', None):
                     url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-brightness"
                     payload['arg'] = data['bri']
+                if data.get('ct', None):
+                    url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/set-saturation"
+                    payload['arg'] = data['ct']
                 if data.get('on', None) is not None:
                     if data['on'] is True:
                         url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-on"
                     elif data['on'] is False:
                         url = "https://api.particle.io/v1/devices/" + bridge_config["lights_address"][light]["light_id"] + "/power-off"
-
                 print("Request URL: ", url)
                 print("Payload: ", json.dumps(payload, indent=2))
                 payload['access_token'] = bridge_config['particle']['access_token']
