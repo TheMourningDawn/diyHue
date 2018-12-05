@@ -1,8 +1,10 @@
 #!/bin/bash
+set -v
+
 mac=`cat /sys/class/net/$(ip route get 8.8.8.8 | sed -n 's/.* dev \([^ ]*\).*/\1/p')/address`
 arch=`uname -m`
 
-cd /tmp
+#cd /tmp
 
 ### installing dependencies
 echo -e "\033[36m Installing dependencies.\033[0m"
@@ -18,7 +20,6 @@ cd ../
 rm -rf astral.zip astral-master/
 
 ### installing hue emulator
-set -v
 echo -e "\033[36m Installing Hue Emulator.\033[0m"
 #wget https://github.com/mariusmotea/diyHue/archive/master.zip -O diyHue.zip
 #unzip -o  diyHue.zip
@@ -109,8 +110,8 @@ fi
 chmod +x /opt/hue-emulator/entertainment-srv
 chmod +x /opt/hue-emulator/coap-client-linux
 cp hue-emulator.service /lib/systemd/system/
-cd ../../
-rm -rf diyHue.zip diyHue-master
+#cd ../../
+#rm -rf diyHue.zip diyHue-master
 chmod 644 /lib/systemd/system/hue-emulator.service
 systemctl daemon-reload
 systemctl enable hue-emulator.service
